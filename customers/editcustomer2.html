@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href="editcustomer1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Customer Form</title>
+</head>
+<body>
+    <section class='sidenav'>
+        <h3>Choobs to Go</h3>
+        <a href="../orders/orders.html">Sales</a>
+        <a href="customers.html">Customers</a>
+        <a href="../food/foods.html">Products</a>
+        <a href="#">My Profile</a>
+        <a href="#">Settings</a>
+        <a href='../index.html' id='logout' onclick="logOut()">Log Out</a>
+        <img src='../assets/logo.png'>
+    </section>
+
+    <main class='main'>
+        <h1> Edit Customer </h1> 
+        <section class="grid">
+            <!-- <form> -->
+                <div class="column1">
+                    <h3> First name: </h3>
+                            <input type="text" value="  Nikki">
+                    <h3> Street address: </h3>
+                            <input type="text" value="  Fiddlewood">
+                    <h3> City: </h3>
+                            <input type="text" value="  Cainta">
+                    <h3> Contact No.: </h3>
+                            <input type="text" value="  09051234567"> 
+                    <button class="delete__button">Delete</button>  
+                </div>
+
+                <div class="column2">
+                    <h3> Last name: </h3>
+                            <input type="text" value="  Cortez">
+                    <h3> Province: </h3>
+                            <input type="text" value="  Rizal">
+                    <h3> Email Address: </h3>
+                            <input type="text" value="  nikki.cortez@gmail.com">
+                    <div class="button__placement">
+                        <button class="save__button" onclick="location.href='customers.html'">Save</button> 
+                        <button class="cancel__button" onclick="location.href='customers.html'">Cancel</button>
+                    </div>
+                </div>
+            <!-- </form> -->
+        </section>
+    </main>
+    <script src='../logout.js'></script>
+</body>
+</html>

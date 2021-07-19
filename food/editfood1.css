@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@649;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;649;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+}
+
+.sidenav {
+    height: 100%; /* to occupy whole column */
+    width: 200px;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #2A3842;
+    overflow-x: hidden; /* disables horizontal scrolling */
+    padding: 50px 0px;
+    
+}
+
+.sidenav > a, .sidenav > h3{
+    padding: 20px 8px 20px 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    font-weight: 650;
+}
+
+.sidenav > a:hover {
+    opacity: 50%;
+}
+
+.sidenav > img {
+    width: 50%;
+    padding: 90px 8px 20px 30px;
+}
+
+.main {
+    margin-left: 220px;
+    padding: 0px 10px;
+}
+
+.main > h1 {
+    margin: 60px 50px 30px 50px;
+}
+
+.addfood__photos {
+    margin: 30px 50px;
+    width: 80%;
+}
+
+.add__foodProducts {
+    display: grid;
+    background-color: #F5F4F4;
+    grid-template-columns: 200px 200px 200px 200px;
+    padding: 20px 16px;
+    grid-gap: 37px;
+    border-radius: 4px;
+}
+
+.add__foodProducts > img {
+    width: 70%;
+    margin: 0px 20px;
+}
+
+.addfood__name, .addfood__price {
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+    background-color: #F5F4F4;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 50px;
+}
+
+.addfood__name > label, .addfood__price > label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.addfood__name > input, .addfood__price > input {
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    background-color: #E5E5E5;
+}
+
+.addfood__desc {
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+    background-color: #F5F4F4;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 50px;    
+}
+
+.addfood__desc > label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.addfood__desc > input {
+    width: 100%;
+    padding: 80px 0px;
+    border-radius: 3px;
+    background-color: #E5E5E5;
+       
+}
+
+.addfood__buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 165px;
+}
+
+.addfood__buttonOne {
+    border: 2px solid;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 45px;
+    width: 185px;
+    font-size: 18px;
+    margin: 0px 10px;
+}
+
+.addfood__buttonTwo {
+    border: none;
+    background-color: #E94926;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 45px;
+    width: 185px;
+    font-size: 18px;
+    margin: 0px 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* navbar responsiveness */
+    .sidenav {
+        display: flex;
+        height: 3px; /* to occupy whole column */
+        width: 100%;
+        position: fixed;
+        z-index: 1; 
+        top: 0;
+        background-color: #2A3842;
+        overflow-x:visible; /* disables horizontal scrolling */
+        padding: 30px 0px; 
+        align-items: center;
+    }
+
+    .sidenav > h3 {
+        margin: 0px 1rem;
+    }
+    .sidenav > a, .sidenav > h3{
+        padding: 5px 8px;
+        font-size: 15px;    
+    }
+
+    .sidenav > a {
+        margin: 0px 10px;
+    }
+
+    .sidenav > img {
+        display: none;
+    }
+
+    .main {
+        margin: 120px 25px 0px 25px;
+    }
+
+    .main > h1 {
+        margin-left: 0px;
+    }
+
+    .addfood__photos {
+        margin: 30px 0px;
+        width: 99%;
+    }
+    
+    .add__foodProducts {
+        display: grid;
+        background-color: #F5F4F4;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    
+    .addfood__name, .addfood__price {
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+        padding: 20px;
+        margin: 30px 0px;
+    }
+    
+    .addfood__name > label, .addfood__price > label, .addfood__desc > label {
+        font-size: 20px;
+    }
+    
+    .addfood__desc {
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+        padding: 20px;
+        margin: 30px 0px;    
+    }
+    
+    .addfood__desc > input {
+        width: 100%;
+        padding: 70px 0px;
+        border-radius: 3px;
+        background-color: #E5E5E5;      
+    }
+    
+    .addfood__buttons {
+        margin: 30px 0px;
+    }
+    
+    .addfood__buttonOne, .addfood__buttonTwo {
+        height: 39px;
+        width: 20%;
+        font-size: 14px;
+    }
+}
+
+
+main {
+    animation: transitionIn 1.5s
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(0deg)
+    }
+    
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}

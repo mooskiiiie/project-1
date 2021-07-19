@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@649;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;649;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+}
+
+.sidenav {
+    height: 100%; /* to occupy whole column */
+    width: 200px;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #2A3842;
+    overflow-x: hidden; /* disables horizontal scrolling */
+    padding: 50px 0px;   
+}
+
+.sidenav > a, .sidenav > h3{
+    padding: 20px 8px 20px 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    font-weight: 650;
+}
+
+.sidenav > a:hover {
+    opacity: 50%;
+}
+
+.sidenav > img {
+    width: 50%;
+    padding: 90px 8px 20px 30px;
+}
+
+.main {
+    margin-left: 200px;
+    padding: 0px 10px;
+}
+
+.main > h1 {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.main__desc {
+    color: #1D1B18;
+    margin: 30px 0px 30px 30px;
+}
+
+.food__item, .a__quantity { 
+    background-color: #F5F4F4;
+    height: 33px;
+    width: 115px;
+    border-radius: 3px;
+    border: none;
+    font-size: 15px;
+    font-weight: 400px;
+}
+
+.a__addbutton {
+    background-color: #2A3842;
+    color: #FFFFFF;
+    border-radius: 3px;
+    border: none;
+    width: 119px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600px;
+}
+
+.searchbar > .search {
+    width: 90%;
+    padding: 13px 0px;
+    margin: 0px 0px 10px 35px;
+    border: solid 1px;
+    border-color: #555555;
+    border-radius: 3px;
+}
+
+.name__list {
+    display: grid;
+    margin: 20px 0px 70px 35px;
+    grid-template-columns: 310px 250px 250px 100px;
+    align-items: center;
+}
+
+.add__name {
+    font-size: 18px;
+    margin: 15px 0px 15px 0px;
+    color: #1D1B18;
+    width: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* navbar responsiveness */
+    .sidenav {
+        display: flex;
+        height: 3px; /* to occupy whole column */
+        width: 100%;
+        position: fixed;
+        z-index: 1; 
+        top: 0;
+        background-color: #2A3842;
+        overflow-x:visible; /* disables horizontal scrolling */
+        padding: 30px 0px; 
+        align-items: center;
+    }
+
+    .sidenav > h3 {
+        margin: 0px 1rem;
+    }
+    .sidenav > a, .sidenav > h3{
+        padding: 5px 8px;
+        font-size: 15px;    
+    }
+
+    .sidenav > a {
+        margin: 0px 10px;
+    }
+
+    .sidenav > img {
+        display: none;
+    }
+
+
+    .main {
+        margin: 120px 25px 0px 25px;
+    }
+
+    .main > h1, .main > p {
+        margin-left: 0px;
+    }
+
+    .searchbar > .search {
+        width: 99%;
+        border-radius: 3px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .name__list {
+        display: grid;
+        margin: 20px 0px 70px 0px;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .add__name {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .food__item, .a__quantity { 
+        height: 29px;
+        width: 115px;
+        font-size: 14px;
+    }
+    
+    .a__addbutton {
+        width: 119px;
+        height: 29px;
+        font-size: 14px;
+    }
+
+}
+
+
+main {
+    animation: transitionIn 1.5s
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(0deg)
+    }
+    
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}

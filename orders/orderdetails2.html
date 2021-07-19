@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href="orderdetails.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+</head>
+<body>
+    <section class='sidenav'>
+        <h3>Choobs to Go</h3>
+        <a href="orders.html">Sales</a>
+        <a href="../customers/customers.html">Customers</a>
+        <a href="../food/foods.html">Products</a>
+        <a href="#">My Profile</a>
+        <a href="#">Settings</a>
+        <a href='../index.html' id='logout' onclick="logOut()">Log Out</a>
+        <img src='../assets/logo.png'>
+    </section>
+
+    <main class='main'>
+        <section class='header'>
+            <h1> Order #0002 </h1>
+            <select name="status" id="status">
+                <option value="Pending"> Status: Pending </option> 
+                <option value="Cancelled"> Status: Cancelled </option> 
+                <option value="Complete"> Status: Complete </option>
+            </select>
+        </section>
+        <p> Date Ordered: 7/01/2021</p>
+        <!-- <form> -->
+            <section class='ed1__grid'> 
+                <h3> Name: </h3>
+                <p> Nikki Cortez </p>
+                <h3> Contact no.: </h3>
+                <p> 09051234567 </p>
+                <h3> Email: </h3>
+                <p> nikki.cortez@gmail.com </p>
+            </section>
+
+            <section class="orderitems">
+            <h3> Order items: </h3>
+            </section>
+            <section class='ed1__orders'>
+                <img src="../assets/craft.jpeg">
+                <p class="od__product"> Craft Beer x1 </p>
+                <p class="od__product"> 250 x1 </p>
+
+                <img src="../assets/vodka.jpeg">
+                <p class="od__product"> Vodka x2 </p>
+                <p class="od__product"> 200 x2 </p>
+
+                <img src="../assets/sprite.jpeg">
+                <p class="od__product"> Sprite x1 </p>
+                <p class="od__product"> 90 x1 </p>
+            </section>
+        <!-- </form> -->
+
+        <section class="ed__price"> 
+            <h3>Total: 540</h3>
+        </section>
+
+        <section class="ed__buttons">
+            <button class="odeditdetails__button" onclick="location.href='editorder2.html'">Edit details</button>
+            <button class="oddeleteorder__button">Delete order</button>
+        </section>
+    </main>
+    <script src='../logout.js'></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href="editorder1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Order</title>
+</head>
+<body>
+    <section class='sidenav'>
+        <h3>Choobs to Go</h3>
+        <a href="orders.html">Sales</a>
+        <a href="../customers/customers.html">Customers</a>
+        <a href="../food/foods.html">Products</a>
+        <a href="#">My Profile</a>
+        <a href="#">Settings</a>
+        <a href='../index.html' id='logout' onclick="logOut()">Log Out</a>
+        <img src='../assets/logo.png'>
+    </section>
+
+    <main class='main'>
+        <h1> Edit Order #0002 </h1>
+            <p> Date Ordered: 7/01/2021</p>
+        <!-- <form> -->
+            <section class='ed1__grid'> 
+                <h3> Name: </h3>
+                <input type="text" value= "  Nikki Cortez"> <!-- value tag makes editing easier by providing pre-filled text boxes for the user to just edit -->
+                <h3> Contact no.: </h3>
+                <input type="text" value= "  09051234567">
+                <h3> Email: </h3>
+                <input type="text" value= "  nikki.cortez@gmail.com">
+                <h3> Address: </h3>
+                <input type="text" value= "  Apollo Street">
+            </section>
+
+            <h3 class='order__items'> Order items: </h3>
+
+            <section class = ed1__orders>
+                <img src="../assets/craft.jpeg">
+                <select name="product" class="product"> 
+                    <option value="Chicken"> Craft Beer </option> 
+                    <option value="Vodka"> Vodka </option>
+                    <option value="Craft Beer"> Chicken </option> 
+                    <option value="Sprite"> Sprite </option>
+                </select>
+
+                <select name="quantity" class="quantity"> 
+                    <option value="1"> 1 </option> 
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option> 
+                    <option value="4"> 4 </option> 
+                    <option value="5"> 5 </option>
+                </select>
+
+                <img src="../assets//vodka.jpeg">
+                <select name="product" class="product"> 
+                    <option value="Chicken"> Vodka </option> 
+                    <option value="Vodka"> Chicken </option>
+                    <option value="Craft Beer"> Craft Beer </option> 
+                    <option value="Sprite"> Sprite </option>
+                </select>
+
+                <select name="quantity" class="quantity"> 
+                    <option value="1"> 1 </option> 
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option> 
+                    <option value="4"> 4 </option> 
+                    <option value="5"> 5 </option>
+                </select>
+
+                <img src="../assets/sprite.jpeg">
+                <select name="product" class="product"> 
+                    <option value="Chicken"> Sprite </option> 
+                    <option value="Vodka"> Vodka </option>
+                    <option value="Craft Beer"> Craft Beer </option> 
+                    <option value="Sprite"> Chicken </option>
+                </select>
+
+                <select name="quantity" class="quantity"> 
+                    <option value="1"> 1 </option> 
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option> 
+                    <option value="4"> 4 </option> 
+                    <option value="5"> 5 </option>
+                </select>
+            </section>
+        <!-- </form> -->
+
+        <h3 class='price'>Total: 540</h3>
+
+        <section class="ed__buttons">
+            <button class="saveorder__button" onclick="location.href='orderdetails2.html'">Save Order</button>
+            <button class="cancel__button" onclick="location.href='orderdetails2.html'">Cancel</button>
+        </section>
+    </main>
+    <script src='../logout.js'></script>
+</body>
+</html>

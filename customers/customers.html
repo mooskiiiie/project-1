@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href="customers.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Customers</title>
+</head>
+<body>
+    <nav class='sidenav'>
+        <h3>Choobs to Go</h3>
+        <a href="../orders/orders.html">Sales</a>
+        <a href="customers.html">Customers</a>
+        <a href="../food/foods.html">Products</a>
+        <a href="#">My Profile</a>
+        <a href="#">Settings</a>
+        <a href='../index.html' id='logout' onclick="logOut()">Log Out</a>
+        <img src='../assets/logo.png'>
+    </nav>
+
+    <main class='main'>
+        <h1>Customers </h1>
+         <section class="ctop__buttons">
+            <button class="cbutton1" onclick="location.href='addcustomer.html'">+ Add new customer</button> 
+        </section>
+
+        <section class="searchbar">
+            <input class="search" type="text" placeholder="  Search customer name"> 
+        </section>
+
+        <section class="name__list">
+            <p class="cname"> Juami Alcazar </p>
+            <p class="cname"> Rizal City </p>
+            <p class="cname"> 09055261566 </p>
+            <button class="cviewcust" onclick="location.href='customer1.html'">View Customer</button>
+            <button class="cedit" onclick="location.href='editcustomer1.html'">Edit</button>
+            <button class="cdelete">Delete</button> 
+            
+            <p class="cname"> Nikki Cortez </p>
+            <p class="cname"> Pasig City </p>
+            <p class="cname"> 09157264536 </p>
+            <button class="cviewcust" onclick="location.href='customer2.html'">View Customer</button>
+            <button class="cedit" onclick="location.href='editcustomer2.html'">Edit</button>
+            <button class="cdelete">Delete</button>  
+            
+            <p class="cname"> Pauline Nicole </p>
+            <p class="cname"> Makati City </p>
+            <p class="cname"> 09035461152 </p>
+            <button class="cviewcust">View Customer</button>
+            <button class="cedit">Edit</button>
+            <button class="cdelete">Delete</button>  
+            
+            <p class="cname"> Basty Sebastian </p>
+            <p class="cname"> Quezon City </p>
+            <p class="cname"> 09014261598 </p>
+            <button class="cviewcust">View Customer</button>
+            <button class="cedit">Edit</button>
+            <button class="cdelete">Delete</button>    
+            
+            <p class="cname"> Sebastian Vergara </p>
+            <p class="cname"> Pasig City </p>
+            <p class="cname"> 09055261566 </p>
+            <button class="cviewcust">View Customer</button>
+            <button class="cedit">Edit</button>
+            <button class="cdelete">Delete</button>  
+            
+            <p class="cname"> Harry Styles </p>
+            <p class="cname"> Pateros City </p>
+            <p class="cname"> 09175267580 </p>
+            <button class="cviewcust">View Customer</button>
+            <button class="cedit">Edit</button>
+            <button class="cdelete">Delete</button>   
+            
+            <p class="cname"> Taylor Swift </p>
+            <p class="cname"> Mandaluyong City </p>
+            <p class="cname"> 09158260500 </p>
+            <button class="cviewcust">View Customer</button>
+            <button class="cedit">Edit</button>
+            <button class="cdelete">Delete</button>   
+            
+            <p class="cname"> JM Santos </p>
+            <p class="cname"> Mandaluyong City </p>
+            <p class="cname"> 09135161557 </p>
+            <button class="cviewcust">View Customer</button>
+            <button class="cedit">Edit</button>
+            <button class="cdelete">Delete</button>  
+        </section>
+    </main>
+    <script src='../logout.js'></script>
+</body>
+</html>

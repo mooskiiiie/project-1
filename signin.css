@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@649;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;649;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+}
+
+.signin__main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px;
+}
+
+.signin__pic {
+    width: 40%;
+}
+
+.signin__form {
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 3px 7px;
+    border-radius: 7px;
+    padding: 40px;
+}
+
+.signin__form > img {
+    width: 50%;
+    margin: 0px 20px 20px 10px;
+}
+
+.signin__input1, .signin__input2 {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 10px;
+}
+
+.signin__input1 > input, .signin__input2 > input {
+    border: none;
+    border-bottom: 1px solid #E5E5E5;
+    color: black;
+    padding: 10px 0px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555555;
+    font-size: 18px;
+}
+
+.p__one, .p__two {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.signin__form > input{
+    padding: 12px 10px;
+}
+
+.signin__box {
+    padding: 12px 10px;
+}
+
+.signin__buttons {
+    margin: 20px 20px 20px 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#log__in {
+    background-color: #1F252C;
+    color: white;
+    border-radius: 1px;
+    border: none;
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+}
+
+#sign__up {
+    color: black;
+    border-radius: 1px;
+    border: 1px #C4C4C4;
+    margin-left: 10px;
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+}
+
+.form__footer {
+    color: #555555;
+    font-size: 12px;
+    margin: 20px 20px 20px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .signin__pic {
+        display: none;
+    }
+
+    .signin__form {
+        border: 1px solid #E5E5E5;
+        box-shadow: 0px 3px 7px;
+        border-radius: 7px;
+        padding: 80px 40px;
+    }
+    
+}
+
+
+.signin__form {
+    animation: transitionIn 1.5s
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(0deg)
+    }
+    
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}

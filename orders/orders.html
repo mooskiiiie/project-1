@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href="orders.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+</head>
+<body>
+    <nav class='sidenav'>
+        <h3>Choobs to Go</h3>
+        <a href="orders.html">Sales</a>
+        <a href="../customers/customers.html">Customers</a>
+        <a href="../food/foods.html">Products</a>
+        <a href="#">My Profile</a>
+        <a href="#">Settings</a>
+        <a href='../index.html' id='logout' onclick="logOut()">Log Out</a>
+        <img src='../assets/logo.png'>
+    </nav>
+
+    <main class='main'>
+        <h1> Sales </h1>
+         <section class="orders__buttons">
+            <button class="orders__button1" onclick="location.href='add.html'">+ Add new order</button> 
+        </section>
+
+        <section class="searchbar">
+            <input class="search" type="text" placeholder = "  Search customer name"> 
+        </section>
+
+        <section class = "orders__list">
+            <p class = "orders__name"> #0001 </p>
+            <p class = "orders__name"> Sebastian Vergara </p>
+            <p class = "orders__name"> 7/01/2021 </p>
+            <button class = "orders__vieworder" onclick="location.href='orderdetails.html'">View Order</button> 
+            <button class = "orders__edit" onclick="location.href='editorder1.html'">Edit Order</button> 
+            <button class = "orders__delete">Delete</button> 
+
+            <p class = "orders__name"> #0002 </p>
+            <p class = "orders__name"> Pauline Cortez </p>
+            <p class = "orders__name"> 7/01/2021 </p>
+            <button class = "orders__vieworder" onclick="location.href='orderdetails2.html'">View Order</button> 
+            <button class = "orders__edit" onclick="location.href='editorder2.html'">Edit Order</button> 
+            <button class = "orders__delete">Delete</button> 
+
+            <p class = "orders__name"> #0003 </p>
+            <p class = "orders__name"> Nikki Cortez </p>
+            <p class = "orders__name"> 6/30/2021 </p>
+            <button class = "orders__vieworder" onclick="location.href='#'">View Order</button> 
+            <button class = "orders__edit" onclick="location.href='#'">Edit Order</button> 
+            <button class = "orders__delete">Delete</button> 
+
+            <p class = "orders__name"> #0004 </p>
+            <p class = "orders__name"> Harry Styles </p>
+            <p class = "orders__name"> 6/29/2021 </p>
+            <button class = "orders__vieworder" onclick="location.href='#'">View Order</button> 
+            <button class = "orders__edit" onclick="location.href='#'">Edit Order</button> 
+            <button class = "orders__delete">Delete</button> 
+
+            <p class = "orders__name"> #0005 </p>
+            <p class = "orders__name"> Taylor Swift </p>
+            <p class = "orders__name"> 6/28/2021 </p>
+            <button class = "orders__vieworder" onclick="location.href='#'">View Order</button> 
+            <button class = "orders__edit" onclick="location.href='#'">Edit Order</button> 
+            <button class = "orders__delete">Delete</button> 
+        </section>
+    </main>
+    <script src='../logout.js'></script>
+</body>
+</html>

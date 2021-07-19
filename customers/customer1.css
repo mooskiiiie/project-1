@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@649;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;649;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+}
+
+.sidenav {
+    height: 100%; /* to occupy whole column */
+    width: 200px;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #2A3842;
+    overflow-x: hidden; /* disables horizontal scrolling */
+    padding: 50px 0px;
+    
+}
+
+.sidenav > a, .sidenav > h3{
+    padding: 20px 8px 20px 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    font-weight: 650;
+}
+
+.sidenav > a:hover {
+    opacity: 50%;
+}
+
+.sidenav > img {
+    width: 50%;
+    padding: 90px 8px 20px 30px;
+}
+
+.customer1__main {
+    margin-left: 250px;
+    padding: 0px 10px;
+}
+
+.customer1__main > h1 {
+    padding: 10px 0px;
+    margin: 50px 0px 10px 0px;
+}
+
+.customer1__container {
+    display: flex;
+}
+
+.address, .contact, .email {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 40px 0px;
+}
+
+.address > p {
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.contact >p {
+    margin-left: 47px;
+}
+
+.email > p {
+    margin-left: 117px;
+}
+
+.customer1__buttons {
+    display: flex;
+    margin: 90px 0px;
+}
+
+.edit__button {
+    background-color: #F5F4F4;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #2A3842;
+    color: #2A3842;
+    border-radius: 3px;
+    width: 120%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.add__order {
+    background-color: #2A3842;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    width: 120%;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.customer1__left {
+    margin-right: 80px;
+}
+
+.customer1__right {
+    margin-left: 80px;
+    background-color: #F5F4F4;
+    border: 0.5px solid #555555;
+    border-radius: 4px;
+    padding: 0px 50px 90px 50px;
+}
+
+.customer1__right > h2{
+    margin: 40px 0px 20px 0px ;
+}
+
+.transactions__container {
+    display: flex;
+}
+
+.transactions__left {
+    margin-right: 70px;
+}
+
+.transactions__left > p, .transactions__right > p {
+    margin: 20px 0px
+}
+
+@media only screen and (max-width: 768px) {
+    /* navbar responsiveness */
+    .sidenav {
+        display: flex;
+        height: 3px; /* to occupy whole column */
+        width: 100%;
+        position: fixed;
+        z-index: 1; 
+        top: 0;
+        background-color: #2A3842;
+        overflow-x:visible; /* disables horizontal scrolling */
+        padding: 30px 0px; 
+        align-items: center;
+    }
+
+    .sidenav > h3 {
+        margin: 0px 1rem;
+    }
+    .sidenav > a, .sidenav > h3{
+        padding: 5px 8px;
+        font-size: 15px;    
+    }
+
+    .sidenav > a {
+        margin: 0px 10px;
+    }
+
+    .sidenav > img {
+        display: none;
+    }
+
+
+    .customer1__main {
+        margin: 120px 25px 0px 25px;
+    }
+
+    .customer1__main > h1 {
+        margin-left: 0px;
+    }
+
+    .customer1__container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .edit__button, .add__order {
+        width: 30%;
+        height: 39px;
+    }
+    
+    .customer1__left {
+        margin-right: 0px;
+    }
+    
+    .customer1__right {
+        margin-left: 0px;
+        padding: 0px 0px 50px 50px;
+        margin-bottom: 50px;
+        width: 50%;
+    }
+    
+    .customer1__right > h2{
+        margin: 40px 0px 20px 0px ;
+    }
+    
+    .transactions__container {
+        display: flex;
+    }
+    
+    .transactions__left {
+        margin-right: 70px;
+    }
+    
+    .transactions__left > p, .transactions__right > p {
+        margin: 20px 0px
+    }
+}
+
+
+main {
+    animation: transitionIn 1.5s
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(0deg)
+    }
+    
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}

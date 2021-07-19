@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href="foods.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choobs</title>
+</head>
+<body>
+    <section class='sidenav'>
+        <h3>Choobs to Go</h3>
+        <a href="../orders/orders.html">Sales</a>
+        <a href="../customers/customers.html">Customers</a>
+        <a href="foods.html">Products</a>
+        <a href="#">My Profile</a>
+        <a href="#">Settings</a>
+        <a href='../index.html' id='logout' onclick="logOut()">Log Out</a>
+        <img src='../assets/logo.png'>
+    </section>
+    <main class='foods__main'>
+        <h1>Product List</h1>
+        <div class='foods__mainButtonAndSearch'>
+            <button class='foods__newProduct' onclick="location.href='addfood.html'"> + Add new product</button>
+            <input type='search' placeholder="  Search product name">
+        </div>
+        <section class='foods__products'>
+            <div class='foods__row'>
+                <img class='foods__row__Image' src='../assets/chicken.png'>
+                <p>Chicken</p>
+                <p>Php 250</p>
+                <button class='view__product' onclick="location.href='food1.html'">View Product</button>
+                <button class='edit__product' onclick="location.href='editfood1.html'">Edit Product</button>
+                <button class='delete__product'>Delete</button>
+            </div>
+
+            <div class='foods__row'>
+                <img class='foods__row__Image' src='../assets/vodka.jpeg'>
+                <p>Vodka</p>
+                <p>Php 250</p>
+                <button class='view__product' onclick="location.href='food2.html'">View Product</button>
+                <button class='edit__product' onclick="location.href='editfood2.html'">Edit Product</button>
+                <button class='delete__product'>Delete</button>
+            </div>
+
+            <div class='foods__row'>
+                <img class='foods__row__Image' src='../assets/craft.jpeg'>
+                <p>Craft Beer</p>
+                <p>Php 250</p>
+                <button class='view__product'>View Product</button>
+                <button class='edit__product'>Edit Product</button>
+                <button class='delete__product'>Delete</button>
+            </div>
+
+            <div class='foods__row'>
+                <img class='foods__row__Image' src='../assets/sprite.jpeg'>
+                <p>Sprite</p>
+                <p>Php 250</p>
+                <button class='view__product'>View Product</button>
+                <button class='edit__product'>Edit Product</button>
+                <button class='delete__product'>Delete</button>
+            </div>
+
+            <div class='foods__row'>
+                <img class='foods__row__Image' src='../assets/steak.jpeg'>
+                <p>Steak Fried Egg</p>
+                <p>Php 350</p>
+                <button class='view__product'>View Product</button>
+                <button class='edit__product'>Edit Product</button>
+                <button class='delete__product'>Delete</button>
+            </div>
+        </section>
+    </main>
+    <script src='../logout.js'></script>
+</body>
+</html>

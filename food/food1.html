@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href="food1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choobs</title>
+</head>
+<body>
+    <section class='sidenav'>
+        <h3>Choobs to Go</h3>
+        <a href="../orders/orders.html">Sales</a>
+        <a href="../customers/customers.html">Customers</a>
+        <a href="foods.html">Products</a>
+        <a href="#">My Profile</a>
+        <a href="#">Settings</a>
+        <a href='../index.html' id='logout' onclick="logOut()">Log Out</a>
+        <img src='../assets/logo.png'>
+    </section>  
+    <main class='main'>
+        <button onclick="location.href='../food/foods.html'" class='back__button'>&#8592;</button>
+        <section class='main__food'>
+            <img src='../assets/food1.png' alt='Photo of fried chicken meal'>
+            <section class='food__description'>
+                <h1>Chicken</h1>
+                <h3>Choobs to Go</h3>
+                <p class='food__descriptionText'>
+                    Our OG Fried Chicken recipe with 10 secret spices and<br> the most special gravy
+                    sauce that will leave you drooling <br>for more. 
+                </p>
+                <p class='food__descriptionPrice'>Php 250</p>
+                <section class='food__descriptionButton'>
+                    <button onclick="location.href='editfood1.html'" class='food__descriptionButton__One' type='button'>Edit</button>
+                    <button class='food__descriptionButton__Two' type='button'>Delete item</button>
+                </section>    
+            </section>
+        </section>
+    </main>
+    <script src='../logout.js'></script>
+</body>
+</html>
+
+
+<!--https://www.toptal.com/designers/htmlarrows/arrows/left-arrow/
+https://madeats.co/collections/yang-gang/products/solo-chicken-box-->

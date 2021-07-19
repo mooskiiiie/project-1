@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@649;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;649;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+}
+
+.sidenav {
+    height: 100%; /* to occupy whole column */
+    width: 200px;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #2A3842;
+    overflow-x: hidden; /* disables horizontal scrolling */
+    padding: 50px 0px;
+    
+}
+
+.sidenav > a, .sidenav > h3{
+    padding: 20px 8px 20px 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    font-weight: 650;
+}
+
+.sidenav > a:hover {
+    opacity: 50%;
+}
+
+.sidenav > img {
+    width: 50%;
+    padding: 90px 8px 20px 30px;
+}
+
+.foods__main {
+    margin-left: 250px;
+    padding: 0px 10px;
+}
+
+.foods__main > h1 {
+    padding: 10px 0px;
+    margin: 50px 0px 10px 0px;
+}
+
+.foods__mainButtonAndSearch {
+    display: flex;
+    flex-direction: column;
+}
+
+.foods__products {
+    margin: 20px 0px 50px;
+}
+
+.foods__newProduct {
+    background-color: #0088F8;
+    color: white;
+    font-weight: 800;
+    border: none;
+    border-radius: 3px;
+    height: 45px;
+    width: 18%;
+    font-size: 16px;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+
+.foods__mainButtonAndSearch > input {
+    width: 90%;
+    border: 0.5px solid #555555;
+    border-radius: 3px;
+    margin: 15px 0px;
+    padding: 13px 0px;
+}
+
+.foods__row {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 120px 120px 120px;
+    align-items: center;
+    background-color: #F5F4F4;
+    width: 86.6%;
+    grid-column-gap: 60px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px 0px;
+}
+
+.foods__row > p {
+    font-size: 18px;
+}
+
+.foods__row__Image {
+    width: 100%;
+    margin-left: 0px;
+}
+
+.view__product {
+    background-color: #2A3842;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    width: 120%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.edit__product {
+    background-color: #F5F4F4;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #2A3842;
+    color: #2A3842;
+    border-radius: 3px;
+    width: 120%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.delete__product {
+    background-color: red;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    width: 120%;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    /* navbar responsiveness */
+    .sidenav {
+        display: flex;
+        height: 3px; /* to occupy whole column */
+        width: 100%;
+        position: fixed;
+        z-index: 1; 
+        top: 0;
+        background-color: #2A3842;
+        overflow-x:visible; /* disables horizontal scrolling */
+        padding: 30px 0px; 
+        align-items: center;
+    }
+
+    .sidenav > h3 {
+        margin: 0px 1rem;
+    }
+    .sidenav > a, .sidenav > h3{
+        padding: 5px 8px;
+        font-size: 15px;    
+    }
+
+    .sidenav > a {
+        margin: 0px 10px;
+    }
+
+    .sidenav > img {
+        display: none;
+    }
+
+
+    .foods__main {
+        margin: 120px 25px 0px 25px;
+    }
+    
+    .foods__products {
+        margin: 20px 0px 50px 0px;
+    }
+
+    .foods__mainButtonAndSearch {
+        display: flex;
+        flex-direction:row;
+    }
+    
+    .foods__newProduct {
+        height: 39px;
+        width: 25%;
+        font-size: 14px;
+    }
+    
+    .foods__mainButtonAndSearch > input {
+        width: 70%;
+        margin: 15px 20px;
+        padding: 10px 0px;
+    }
+    
+    .foods__row {
+        display: grid;
+        grid-template-columns: 100px 70px 70px 1fr 1fr 1fr;
+        width: 92%;
+        grid-column-gap: 30px;
+        padding: 15px 20px;
+    }
+    
+    .foods__row > p {
+        font-size: 14px;
+    }
+    
+    .foods__row__Image {
+        width: 100%;
+        margin-left: 5px;
+    }
+    
+    .view__product {
+        font-size: 12px;
+        width: 110%;
+        height: 39px;
+    }
+
+    .delete__product {
+        width: 110%;
+        height: 39px;
+        font-size: 12px;
+    }
+    
+    .edit__product {
+        width: 110%;
+        height: 39px;
+        font-size: 12px;
+
+    }
+}
+
+
+
+main {
+    animation: transitionIn 1.5s
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(0deg)
+    }
+    
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}

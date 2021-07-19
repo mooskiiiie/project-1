@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href="add.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add order form</title>
+</head>
+<body>
+    <nav class='sidenav'>
+        <h3>Choobs to Go</h3>
+        <a href="orders.html">Sales</a>
+        <a href="../customers/customers.html">Customers</a>
+        <a href="../food/foods.html">Products</a>
+        <a href="#">My Profile</a>
+        <a href="#">Settings</a>
+        <a href='../index.html' id='logout' onclick="logOut()">Log Out</a>
+        <img src='../assets/logo.png'>
+    </nav>
+
+    <main class='main'>
+        <h1> Add order form </h1>
+        <h2 class='main__desc'> Select a customer </h2>
+
+        <section class="searchbar">
+            <input class="search" type="text" placeholder="    Search customer name"> 
+        </section>
+
+        <section class="name__list">
+
+            <!--first-->
+            <input class="add__name">
+            <select name="food item" class ="food__item">
+                <option value = "value" selected disabled hidden> Food item </option> 
+                <option value="Chicken"> Chicken </option> 
+                <option value="Vodka"> Vodka </option>
+                <option value="Craft Beer"> Craft Beer </option> 
+                <option value="Sprite"> Sprite </option>
+            </select>
+
+            <select name="quantity" class="a__quantity"> 
+                <option value = "value" selected disabled hidden> Quantity </option> 
+                <option value="1"> 1 </option> 
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option> 
+                <option value="4"> 4 </option> 
+                <option value="5"> 5 </option>
+            </select>
+            <button class = "a__addbutton" id='btnAdd' onclick="buttonToggle('btnAdd')">Add</button> 
+
+
+            <!--second-->
+            <input class="add__name">
+            <select name="food item" class="food__item">
+                 <option value="value" selected disabled hidden> Food item </option>
+                 <option value="Chicken"> Chicken </option> 
+                 <option value="Vodka"> Vodka </option>
+                 <option value="Craft Beer"> Craft Beer </option>
+                 <option value="Sprite"> Sprite </option>
+            </select>
+
+            <select name="quantity" class="a__quantity">
+                 <option value="value" selected disabled hidden> Quantity </option>
+                 <option value="1"> 1 </option> 
+                 <option value="2"> 2 </option>
+                 <option value="3"> 3 </option> 
+                 <option value="4"> 4 </option>
+                 <option value="5"> 5 </option>
+            </select>
+            <button class="a__addbutton" id='btnAdd2' onclick="buttonToggle('btnAdd2')">Add</button> 
+
+
+            <!--third-->
+            <input class="add__name">
+            <select name="food item" class="food__item">
+                <option value="value" selected disabled hidden> Food item </option>
+                <option value="Chicken"> Chicken </option> 
+                <option value="Vodka"> Vodka </option>
+                <option value="Craft Beer"> Craft Beer </option> 
+                <option value="Sprite"> Sprite </option>
+            </select>
+
+            <select name="quantity" class="a__quantity">
+                <option value="value" selected disabled hidden> Quantity </option>
+                <option value="1"> 1 </option> 
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option> 
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+            </select>
+            <button class="a__addbutton" id='btnAdd3' onclick="buttonToggle('btnAdd3')">Add</button>
+
+
+            <!--fourth-->
+            <input class="add__name">
+            <select name="food item" class="food__item">
+                <option value="value" selected disabled hidden> Food item </option>
+                <option value="Chicken"> Chicken </option> 
+                <option value="Vodka"> Vodka </option>
+                <option value="Craft Beer"> Craft Beer </option> 
+                <option value="Sprite"> Sprite </option>
+            </select>
+
+            <select name="quantity" class="a__quantity"> 
+                <option value="value" selected disabled hidden> Quantity </option> 
+                <option value="1"> 1 </option> 
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option> 
+                <option value="4"> 4 </option> 
+                <option value="5"> 5 </option>
+            </select>
+            <button class="a__addbutton" id='btnAdd4' onclick="buttonToggle('btnAdd4')">Add</button>
+            
+
+            <!--fifth-->
+            <input class="add__name">
+            <select name="food item" class ="food__item"> 
+                <option value="value" selected disabled hidden> Food item </option> 
+                <option value="Chicken"> Chicken </option> 
+                <option value="Vodka"> Vodka </option>
+                <option value="Craft Beer"> Craft Beer </option> 
+                <option value="Sprite"> Sprite </option>
+            </select>
+
+            <select name="quantity" class="a__quantity"> 
+                <option value="value" selected disabled hidden> Quantity </option> 
+                <option value="1"> 1 </option> 
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option> 
+                <option value="4"> 4 </option> 
+                <option value="5"> 5 </option>
+            </select>
+            <button class="a__addbutton" id='btnAdd5' onclick="buttonToggle('btnAdd5')">Add</button> 
+
+
+            <!--sixth-->
+            <input class="add__name">
+            <select name="food item" class="food__item"> 
+                <option value="value" selected disabled hidden> Food item </option> 
+                <option value="Chicken"> Chicken </option> 
+                <option value="Vodka"> Vodka </option>
+                <option value="Craft Beer"> Craft Beer </option> 
+                <option value="Sprite"> Sprite </option>
+            </select>
+
+            <select name="quantity" class="a__quantity"> 
+                <option value="value" selected disabled hidden> Quantity </option> 
+                <option value="1"> 1 </option> 
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option> 
+                <option value="4"> 4 </option> 
+                <option value="5"> 5 </option>
+            </select>
+            <button class="a__addbutton" id='btnAdd6' onclick="buttonToggle('btnAdd6')">Add</button> 
+
+
+            <!--seventh-->
+            <input class="add__name">
+            <select name="food item" class ="food__item"> 
+                <option value="value" selected disabled hidden> Food item </option> 
+                <option value="Chicken"> Chicken </option> 
+                <option value="Vodka"> Vodka </option>
+                <option value="Craft Beer"> Craft Beer </option> 
+                <option value="Sprite"> Sprite </option>
+            </select>
+
+            <select name="quantity" class="a__quantity"> 
+                <option value="value" selected disabled hidden> Quantity </option> 
+                <option value="1"> 1 </option> 
+                <option value="2"> 2 </option><option value="3"> 3 </option> 
+                <option value="4"> 4 </option> <option value="5"> 5 </option>
+            </select>
+            <button class="a__addbutton" id='btnAdd7' onclick="buttonToggle('btnAdd7')">Add</button> 
+
+
+            <!--eight-->
+            <input class="add__name">
+            <select name="food item" class ="food__item"> 
+                <option value = "value" selected disabled hidden> Food item </option> 
+                <option value="Chicken"> Chicken </option> 
+                <option value="Vodka"> Vodka </option>
+                <option value="Craft Beer"> Craft Beer </option> 
+                <option value="Sprite"> Sprite </option>
+            </select>
+
+            <select name="quantity" class="a__quantity"> 
+                <option value = "value" selected disabled hidden> Quantity </option> 
+                <option value="1"> 1 </option> 
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option> 
+                <option value="4"> 4 </option> 
+                <option value="5"> 5 </option>
+            </select>
+            <button class = "a__addbutton" id='btnAdd8' onclick="buttonToggle('btnAdd8')">Add</button> 
+        </section>
+    </main>
+    <script src='add.js'>
+    </script>
+</body>  
+</html>

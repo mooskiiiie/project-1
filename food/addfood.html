@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="addfood.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choobs</title>
+</head>
+<body>
+    <section class='sidenav'>
+        <h3>Choobs to Go</h3>
+        <a href="../orders/orders.html">Sales</a>
+        <a href="../customers/customers.html">Customers</a>
+        <a href="foods.html">Products</a>
+        <a href="#">My Profile</a>
+        <a href="#">Settings</a>
+        <a href='../index.html' id='logout' onclick="logOut()">Log Out</a>
+        <img src='../assets/logo.png'>
+    </section>
+    <main class='main'>
+        <h1>Add a product</h1>
+        <section class="addfood__photos">
+            <div class='add__foodProducts'>
+                <img src='../assets/nullphoto.png'>
+                <img src='../assets/nullphoto.png'>
+                <img src='../assets/nullphoto.png'>
+                <img src='../assets/nullphoto.png'>    
+                <img src='../assets/nullphoto.png'>
+                <img src='../assets/nullphoto.png'>
+                <img src='../assets/nullphoto.png'>
+                <img src='../assets/nullphoto.png'>
+            </div>
+        </section>
+        <section class='addfood__name'>
+            <label>Product Name</label>
+            <input type="text">
+        </section>
+        <section class='addfood__price'>
+            <label>Product Price</label>
+            <input type='text'>
+        </section>
+        <section class='addfood__desc'>
+            <label>Product Description</label>
+            <input type='text'>
+        </section>
+        <section class="addfood__buttons">
+            <button class='addfood__buttonOne' onclick="location.href='foods.html'">Add Product</button>
+            <button class='addfood__buttonTwo' onclick="location.href='foods.html'">Cancel</button>
+        </section>
+    </main>
+    <script src='../logout.js'></script>
+</body>
+</html>

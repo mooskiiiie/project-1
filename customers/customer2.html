@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href='customer1.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choobs</title>
+</head>
+<body>
+    <section class='sidenav'>
+        <h3>Choobs to Go</h3>
+        <a href="../orders/orders.html">Sales</a>
+        <a href="customers.html">Customers</a>
+        <a href="../food/foods.html">Products</a>
+        <a href="#">My Profile</a>
+        <a href="#">Settings</a>
+        <a href='../index.html' id='logout' onclick="logOut()">Log Out</a>
+        <img src='../assets/logo.png'>
+    </section>
+    <main class='customer1__main'>
+        <h1>Nikki Cortez</h1>
+        <section class='customer1__container'>
+            <section class='customer1__left'>
+                <div class='address'>
+                    <h2>Address:</h2>
+                    <p>3 Fiddlewood Street, Greenwoods <br>
+                     Executive Village, Cainta, Rizal,<br>
+                     1900</p>
+                </div>
+
+                <div class='contact'>
+                    <h2>Contact no:</h2>
+                    <p>09051234567</p>
+                </div>
+
+                <div class='email'>
+                    <h2>Email:</h2>
+                    <p>nikki.cortez@gmail.com</p>
+                </div>
+
+                <div class='customer1__buttons'>
+                    <button class='edit__button' onclick="location.href='editcustomer2.html'">Edit</button>
+                    <button class='add__order' onclick="location.href='../orders/add.html'">Add order</butotn>
+                </div>
+            </section>
+            <section class='customer1__right'>
+                <h2>Transactions:</h2>
+                <div class='transactions__container'>
+                    <div class='transactions__left'>
+                        <h3>Order #:</h3>
+                        <p>#00001</p>
+                        <p>#00001</p>
+                        <p>#00001</p>
+                        <p>#00001</p>
+                        <p>#00001</p>
+                        <p>#00001</p>
+                        <p>#00001</p>
+                    </div>
+                    <div class="transactions__right">
+                        <h3>Order date:</h3>
+                        <p>04/04/2021</p>
+                        <p>04/04/2021</p>
+                        <p>04/04/2021</p>
+                        <p>04/04/2021</p>
+                        <p>04/04/2021</p>
+                        <p>04/04/2021</p>
+                        <p>04/04/2021</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+    </main>
+    <script src='../logout.js'>
+    </script>
+</body>
+</html>
